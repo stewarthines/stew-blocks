@@ -1,0 +1,32 @@
+@mixin row {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: $gridMaxWidth;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 312px) and (max-width: 600px) {
+    flex-wrap: wrap;
+    padding-left: $spacingSM;
+    padding-right: $spacingSM;
+  }
+}
+
+@mixin column($columnFlex: auto, $colFlexSM: 0 0 100%, $colMarginBottomSM: $spacingBase) {
+  position: relative;
+  z-index: 5;
+  flex: $columnFlex;
+  margin-left: $gridGutter;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 312px) and (max-width: 600px) {
+    flex: $colFlexSM;
+    margin-left: 0;
+    margin-bottom: $colMarginBottomSM;
+  }
+}

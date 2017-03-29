@@ -1,0 +1,10 @@
+.block {
+  position: relative;
+  z-index: 1;
+}
+
+.block.style-bg-gray {
+  padding-top: $spacingMD;
+  padding-bottom: $spacingMD;
+  background-color: $gray06;
+}

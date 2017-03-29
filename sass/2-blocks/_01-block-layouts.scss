@@ -1,0 +1,48 @@
+// Block Layouts & Structure
+// = = = = = = = = = = = = = //
+// Stewart Hines | 2017 (based on solved by flexbox: https://philipwalton.github.io/solved-by-flexbox/demos/grids/)
+
+// = = = = 1. Containers = = = = //
+.block .block-header,
+.block .block-body,
+.block .block-footer {
+  @include row;
+}
+
+// = = = = 2. Layouts = = = = //
+
+.block .col {
+  @include column;
+}
+
+.block .layout-2-of-8 {
+  .col {
+    @include column(0 0 $gridCol2);
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1023px) {
+    flex-wrap: wrap;
+
+    .col {
+      @include column(0 0 $gridCol4);
+
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.block .layout-3-of-8 {
+  .col-third {
+    @include column(0 0 $gridCol3);
+  }
+
+  .col {
+    @include column;
+  }
+}
+
+.block .layout-4-of-8 .col {
+  @include column(0 0 $gridCol4);
+}

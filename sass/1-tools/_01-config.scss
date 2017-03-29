@@ -1,0 +1,81 @@
+// BLOCKS CONFIG
+// = = = = = = = //
+// Stewart Hines (@stewarthines) | March 2017
+// = = = = = = = //
+// = = = = 1. Browser Context = = = = //
+$browserContext: 16px;
+
+@function rem($pixels, $context: $browserContext) {
+  @return $pixels / $context * 1rem;
+}
+
+// = = = = 2. Colors = = = = //
+// == Open Color: https://yeun.github.io/open-color/ ==//
+// == 2.A Gray ==//
+$gray06: #F0F0F0;
+$gray17: #D4D4D4;
+$gray28: #B8B8B8;
+$gray39: #9C9C9C;
+$gray50: #7F7F7F;
+$gray61: #636363;
+$gray72: #474747;
+$gray83: #2B2B2B;
+$gray94: #0F0F0F;
+
+// == 2.B Red == //
+$red01: #f03e3e;
+$red02: #e03131;
+$red03: #c92a2a;
+
+// == 2.C Pink ==//
+$pink01: #d6336c;
+$pink02: #c2255c;
+$pink03: #a61e4d;
+
+// == 2.D Purple ==//
+$purple01: #ae3ec9;
+$purple02: #9c36b5;
+$purple03: #862e9c;
+
+// == 2.E Violet ==//
+// == 2.F Indigo ==//
+// == 2.G Blue ==//
+// == 2.H Cyan ==//
+// == 2.H Teal ==//
+// == 2.H Green ==//
+// == 2.H Lime ==//
+// == 2.H Yellow ==//
+// == 2.H Orange ==//
+// == 2.I Color Assignments ==//
+// = = = = 3. Break Points = = = = //
+// = = = = 4. Type = = = = //
+$fontColor: $gray72;
+$fontFamilySans: "Roboto", Arial, sans-serif;
+$fontSize: rem(18px);
+$h1: rem(51px);
+$h2: rem(36px);
+$h3: rem(25px);
+$h4: rem(18px);
+$h5: rem(16px);
+$h6: rem(14px);
+
+// = = = = 4. Sizing = = = = //
+$spacingBase: rem(32px);
+$spacingXS: rem(16px);
+$spacingSM: rem(24px);
+$spacingMD: rem(48px);
+$spacingLG: rem(56px);
+$spacingXL: rem(64px);
+$borderRadius: 4px;
+
+// = = = = 5. Layout = = = = //
+$gridMaxWidth: 1344px;
+$gridGutter: percentage(32px / $gridMaxWidth);
+$gridCol1: percentage(140px / $gridMaxWidth);
+$gridCol2: percentage(312px / $gridMaxWidth);
+$gridCol3: percentage(484px / $gridMaxWidth);
+$gridCol4: percentage(656px / $gridMaxWidth);
+$gridCol5: percentage(828px / $gridMaxWidth);
+$gridCol6: percentage(1000px / $gridMaxWidth);
+$gridCol7: percentage(1172px / $gridMaxWidth);
+$gridCol8: percentage($gridMaxWidth / $gridMaxWidth);
