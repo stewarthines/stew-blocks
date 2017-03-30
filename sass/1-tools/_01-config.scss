@@ -47,10 +47,12 @@ $purple03: #862e9c;
 // == 2.H Yellow ==//
 // == 2.H Orange ==//
 // == 2.I Color Assignments ==//
+$borderColor: $gray17;
+
 // = = = = 3. Break Points = = = = //
 // = = = = 4. Type = = = = //
 $fontColor: $gray72;
-$fontFamilySans: "Roboto", Arial, sans-serif;
+$fontFamilySans: "Fira Sans", "Roboto", Arial, sans-serif;
 $fontSize: rem(18px);
 $h1: rem(51px);
 $h2: rem(36px);

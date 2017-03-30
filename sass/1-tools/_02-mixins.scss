@@ -30,3 +30,24 @@
     margin-bottom: $colMarginBottomSM;
   }
 }
+
+@mixin responsiveSVG($svgMaxWidth, $svgMaxHeight) {
+  position: relative;
+  display: inline-block;
+  width: $svgMaxWidth;
+  max-width: $svgMaxWidth;
+  padding-bottom: $svgMaxHeight;
+  vertical-align: middle;
+
+  svg {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.responsive-svg {
+  @include responsiveSVG($spacingMD, $spacingMD);
+}

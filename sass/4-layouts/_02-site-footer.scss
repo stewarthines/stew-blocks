@@ -1,0 +1,22 @@
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: $spacingXL;
+  padding: ($spacingXL * 2) 0;
+  color: white;
+  font-size: rem(14px);
+  background: $gray83;
+
+  a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity 350ms ease-in-out;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 350ms ease-in-out;
+    }
+  }
+}

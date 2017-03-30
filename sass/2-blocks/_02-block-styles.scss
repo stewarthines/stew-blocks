@@ -6,5 +6,20 @@
 .block.style-bg-gray {
   padding-top: $spacingMD;
   padding-bottom: $spacingMD;
+  margin-bottom: $spacingMD;
   background-color: $gray06;
+}
+
+.divider {
+  display: flex;
+  padding: rem(22px);
+
+  hr {
+    display: block;
+    flex: 0 0 50%;
+    height: 1px;
+    border: none;
+    outline: none;
+    background: $borderColor;
+  }
 }
