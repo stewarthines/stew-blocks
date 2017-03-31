@@ -9,6 +9,10 @@
   @include row;
 }
 
+.block .block-header {
+  flex-flow: column;
+}
+
 // = = = = 2. Layouts = = = = //
 
 .block .col {

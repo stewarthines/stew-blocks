@@ -1,1 +1,57 @@
+// = = = = Text Utilities = = = = //
+h1,
+%headingOne {}
 
+h2,
+%headingTwo {
+  flex: 0 0 100%;
+}
+
+h3,
+%headingThree {}
+
+h4,
+%headingFour {}
+
+h5,
+%headingFive,
+.sub-title {
+  display: block;
+  flex: 0 0 100%;
+  font-size: rem(14px);
+  font-weight: 400;
+  color: $gray50;
+}
+
+h6,
+%headingSix {}
+
+// === Alignment ===//
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// === Text Styles ===//
+.has-sub-title {
+  margin-bottom: 0;
+}
+
+.drop-cap:first-letter {
+  color: $fontColor;
+  float: left;
+  font-family: $fontFamilySans;
+  font-size: rem(75px);
+  font-weight: 800;
+  line-height: rem(60px);
+  padding-top: rem(4px);
+  padding-right: rem(8px);
+  padding-left: rem(3px);
+}
